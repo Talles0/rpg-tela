@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Pixelify+Sans:wght@400..700&display=swap');
+
+body{
+    background-color: bisque;
+    padding: 2,5%;
+    font-family: 'pixelify sans';
+}
+header{
+    background-color: aquamarine;
+    margin-top: -8px;
+    width: 100%;
+    height: 50px;
+}
+main{
+    background-color: chartreuse;
+    width: auto;
+    margin: 0 auto;
+
+}
+#div-master{
+
+
+    padding: 10%;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    column-gap: 3%;
+    row-gap: 25px;
+    
+}
+
+.ficha{
+    background-color: red;
+
+    width: 90%;
+    height: 90%;
+
+
+    padding: 2%;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    column-gap: 1vw;
+    row-gap: 0px;
+}
+.ficha:hover{
+    margin-left: -15px;
+    width: 95%;
+    height: 95%;
+}
+.imagem-perfil-class{
+    width: 12vw;
+    height: 12vw;
+    margin-top: 2vh;
+
+    justify-self: center;
+    border-radius: 360px;
+
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.nome-perfil{
+    align-self: center;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    font-family: 'pixelify sans';
+    font-size: 3vmax;
+    
+}
+.hp{
+    width: fit-content;
+    height: min-content;
+
+    padding-left: 1.4vw;
+    padding-right: 50px;
+
+    border: solid;
+    border-radius: 360px;
+    border-color: #000;
+
+    font-size: 1vmax;
+    font-family: 'pixelify sans';
+    color: #ffffff;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    
+
+    background-color: #59ce4f;
+
+}
+.abaixo-nome{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-family: 'pixelify sans';
+    font-size: 1vmax;
+}
+.texto-recolhivel-hp{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    align-self: center;
+    font-size: 1vmax;
+}
+.input-dano{
+    width: 50%;
+    border-radius: 5px;
+    border: unset;
+    font-family: 'pixelify sans';
+    color: #FF0000;
+}
+.input-dano:focus{
+    outline: none;
+}
+.botao-dano{
+
+}
