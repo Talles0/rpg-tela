@@ -10,38 +10,79 @@
     <header></header>
     <main>
         <div class="" id="div-master">
-            <div class="ficha" id="1">
+            <div class="ficha fundo-thareon" id="ficha1">
                 <img src="https://i.postimg.cc/7Z648mjv/AVJ.jpg" class="imagem-perfil-class">
-                <span class="nome-perfil">Mano 1</span><br>
-                <span class="hp" id="hp1">HP: </span>
-                <span class="abaixo-nome">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                <details class="texto-recolhivel-hp">
-                <summary class="sumario-hp">Reduzir HP</summary>
-                <input class="input-dano" id="inputdano1" placeholder="Insira dano tomado...">
-                <button class="botao-dano" id="butaodano1" onclick="danoTomado1()" onclick="salvarHp()">⚔</button>
-                </details>
-            </div>
-            <div class="ficha" id="2">
-                <img src="https://i.postimg.cc/vZNsQ5d4/Omega.png" class="imagem-perfil-class">
-                <span class="nome-perfil">Mano 2</span>
-                <span class="hp" id="hp2">HP: </span>
-                <span class="abaixo-nome">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                <details class="texto-recolhivel-hp">
-                <summary class="sumario-hp">Reduzir HP</summary>
-                <input class="input-dano" id="inputdano2" placeholder="Insira dano tomado...">
+               
+                <span class="nome-perfil">ADELAAR VAN JAGUER</span><br>
+                
+                <div class="flex-status">
+                
+                <div class="div-hp"><span class="hp" id="hp1"></span></div>
+
+                <span class="abaixo-nome">17 PV | FOR 2 | AGI 4 | INT 5 | RES 2 </span> 
+
+                <div class="selecoes">
+                    <details class="texto-recolhivel">
+                            <summary class="sumario">Reduzir HP</summary>
+                            <input class="input-dano" id="inputdano1" placeholder="Insira dano...">
+                            <button class="botao-dano" id="butaodano1" onclick="danoTomado1()" onclick="salvarHp()">⚔</button>
+                    </details>
+                    <details class="texto-recolhivel">
+                            <summary class="sumario">Ver Ficha</summary>
+                            <iframe src="https://1drv.ms/b/c/d55d52c4a7aed0c1/IQTmyblqkGFPSI79XuHxgEETAT0TOa08EBgt15sxQwxQt3s" width="400" height="200" frameborder="0" scrolling="no"></iframe>
+                    </details>
+                </div>
+                </div>
+                </div>
+            <div class="ficha fundo-na" id="ficha2">
+                <img src="https://i.postimg.cc/brRXGtbX/unidadeomega.jpg" class="imagem-perfil-class">
+                <span class="nome-perfil">UNIDADE ÔMEGA</span>
+               
+                <div class="flex-status">
+
+                <div class="div-hp"><span class="hp" id="hp2"></span></div>
+                
+                <span class="abaixo-nome">6 (5+1) PV | FOR 2 | AGI 5 | INT 1 | RES 2 </span>
+
+                <div class="selecoes">
+                <details class="texto-recolhivel">
+                <summary class="sumario">Reduzir HP</summary>
+                <input class="input-dano" id="inputdano2" placeholder="Insira dano...">
                 <button class="botao-dano" id="butaodano2" onclick="danoTomado2()">⚔</button>
                 </details>
-            </div>
-            <div class="ficha" id="3">
+                     <details class="texto-recolhivel">
+                            <summary class="sumario">Ver Ficha</summary>
+                            <iframe src="https://1drv.ms/b/c/d55d52c4a7aed0c1/IQQpbmUBsLLBTLmyNy5eWfJiAW0yOMymmjibROE9bZ5a3ss" width="400" height="200" frameborder="0" scrolling="no"></iframe>
+                    </details>
+                </div>
+                </div>
+                </div>
+            <div class="ficha fundo-kaerzhul" id="ficha3">
                 <img src="Generic-Profile (1).jpg" class="imagem-perfil-class">
-                <span class="nome-perfil">Mano 3</span>
-                <span class="hp" id="hp3">HP: </span>
-                <span class="abaixo-nome">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                <details class="texto-recolhivel-hp">
-                <summary class="sumario-hp">Reduzir HP</summary>
-                    <input class="input-dano" id="inputdano3" placeholder="Insira dano tomado...">
+
+                <span class="nome-perfil">WEST</span>
+                 <div class="flex-status">
+                <div class="div-hp"><span class="hp" id="hp3"></span></div>
+                <div class="div-sn"><span class="sn" id="sanidadeid"></span></div>
+                <span class="abaixo-nome">7 (5+2) PV | FOR 4 | AGI 2 | INT 1 | RES 3 </span>
+                
+                <div class="selecoes">
+                <details class="texto-recolhivel">
+                <summary class="sumario">Reduzir HP</summary>
+                    <input class="input-dano" id="inputdano3" placeholder="Insira dano...">
                     <button class="botao-dano" id="butaodano3" onclick="danoTomado3()">⚔</button>
                 </details>
+                <details>
+                <summary class="sumario">Reduzir Sanidade</summary>
+                    <input class="input-dano" id="inputsanidade" placeholder="Insira valor...">
+                    <button class="botao-dano" id="botaosanidade" onclick="sanidade()">🕱</button>
+                </details>
+                <details class="texto-recolhivel">
+                            <summary class="sumario">Ver Ficha</summary>
+                            <button href="">↓</button>
+                    </details>
+                </div>
+                </div>
 <!--                 
             </div>
             <div class="ficha" id="4">
@@ -62,6 +103,7 @@
                 <span class="abaixo-nome">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
                 
             </div> -->
+            </div>
         </div>
     </main>
     <script src="script.js">

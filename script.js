@@ -2,21 +2,30 @@ var ahp1, ahp2, ahp3
 var thp1, thp2, thp3
 
 
-        ahp1 = "100";
-        ahp2 = "100";
-        ahp3 = "100";
+        ahp1 = "17";
+        ahp2 = "17";
+        ahp3 = "16";
 
-        thp1 = "100";
-        thp2 = "100";
-        thp3 = "100";
+        thp1 = "17";
+        thp2 = "17";
+        thp3 = "16";
 
         life1 = ahp1 + "/" + thp1;
         life2 = ahp2 + "/" + thp2;
         life3 = ahp3 + "/" + thp3;
 
+var asn, tsn, sanidadefull
+        
+        asn = 7;
+        tsn = 10;
+        sanidadefull = asn + "/" + tsn;
+
+
         document.getElementById("hp1").textContent = "HP: " + life1;
         document.getElementById("hp2").textContent = "HP: " + life2;
         document.getElementById("hp3").textContent = "HP: " + life3;
+
+        document.getElementById("sanidadeid").textContent = "SAN: " + sanidadefull;
 
         //Mudar cor dependendo do HP
         //50% de vida
@@ -106,5 +115,25 @@ var thp1, thp2, thp3
         if(ahp3 <= 0){
             document.getElementById("hp3").style.backgroundColor = "black";
             ahp3 = 0;
+        }
+    }
+
+    function sanidade(){
+        var inputSanidade = document.getElementById("inputsanidade");
+        
+        var inputSanidadeDigitada = inputSanidade.value;
+        asn = asn - inputSanidadeDigitada;
+        sanidadefull = asn + "/" + tsn;
+        document.getElementById("sanidadeid").textContent = "SAN: " + sanidadefull;
+
+        if(asn <= (tsn/100 * 50)){
+            document.getElementById("sanidadeid").style.backgroundColor = "firebrick";
+        }
+        if(asn <= (tsn/100 * 20)){
+            document.getElementById("sanidadeid").style.backgroundColor = "darkred";
+        }
+        if(asn <= 0){
+            document.getElementById("sanidadeid").style.backgroundColor = "black";
+            asn = 0;
         }
     }

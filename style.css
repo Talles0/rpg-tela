@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Pixelify+Sans:wght@400..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=New+Rocker&family=Pixelify+Sans:wght@400..700&display=swap');
 body{
     background-color: bisque;
     padding: 2,5%;
@@ -18,67 +17,98 @@ main{
 
 }
 #div-master{
-
-
-    padding: 10%;
+    padding: 0px 5%;
     background-color: rgb(255, 255, 255);
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto auto;
-    justify-content: center;
-    column-gap: 3%;
-    row-gap: 25px;
-    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1%;
+
+    justify-items: center;
 }
 
 .ficha{
-    background-color: red;
+    align-self: center;
 
-    width: 90%;
-    height: 90%;
+    background-color: rgb(47, 18, 134);
 
-
-    padding: 2%;
+    width: 40vmax;
+    height: 70%;
+    border-radius: 5px;
 
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     column-gap: 1vw;
     row-gap: 0px;
+
+    
 }
 .ficha:hover{
     margin-left: -15px;
     width: 95%;
-    height: 95%;
+    height: 75%;
+
+    border-radius: 5px;
+
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.59);
 }
+.fundo-thareon{
+    background-image: url('https://i.postimg.cc/nr5p0ZX0/FUNDO-RPG1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fundo-kaerzhul{
+    background-image: url('https://i.postimg.cc/59k4x5sL/FUNDO-RPG2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fundo-na{
+    background-image: linear-gradient(to right, rgb(255, 228, 132), rgb(151, 151, 247));
+}      
 .imagem-perfil-class{
     width: 12vw;
     height: 12vw;
-    margin-top: 2vh;
 
     justify-self: center;
     border-radius: 360px;
 
     grid-column-start: 1;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.7);
 }
 .nome-perfil{
     align-self: center;
     grid-column-start: 2;
     grid-row-start: 1;
-    font-family: 'pixelify sans';
+    font-family: 'Jersey 10';
     font-size: 3vmax;
     
 }
+.flex-status{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.div-hp{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
 .hp{
+
     width: fit-content;
     height: min-content;
 
     padding-left: 1.4vw;
-    padding-right: 50px;
+    padding-right: 2vw;
 
     border: solid;
     border-radius: 360px;
@@ -87,27 +117,68 @@ main{
     font-size: 1vmax;
     font-family: 'pixelify sans';
     color: #ffffff;
-    grid-column-start: 2;
-    grid-row-start: 1;
-    
 
     background-color: #59ce4f;
+
+}
+.div-sn{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.sn{
+
+    width: fit-content;
+    height: min-content;
+
+    padding-left: 1.4vw;
+    padding-right: 2vw;
+
+    border: solid;
+    border-radius: 360px;
+    border-color: #000;
+
+    font-size: 1vmax;
+    font-family: 'pixelify sans';
+    color: #ffffff;
+
+    background-color: #720078;
 
 }
 .abaixo-nome{
     grid-column-start: 2;
     grid-row-start: 2;
-    font-family: 'pixelify sans';
-    font-size: 1vmax;
+    font-family: 'Jersey 10';
+    font-size: 1.5vmax;
+    height: fit-content;
 }
-.texto-recolhivel-hp{
+.texto-recolhivel{
     grid-column-start: 2;
     grid-row-start: 2;
-    align-self: center;
     font-size: 1vmax;
+}
+
+.selecoes{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+summary{
+  list-style-type: none;
+} 
+summary:hover{
+  list-style-type: '▶';
+}
+.sumario{
+    font-size: 1.5vmax;
 }
 .input-dano{
     width: 50%;
+    height: 9px;
     border-radius: 5px;
     border: unset;
     font-family: 'pixelify sans';
@@ -117,5 +188,40 @@ main{
     outline: none;
 }
 .botao-dano{
+    color: #fff;
+    background-color: #3d0000;
+    border: none;
+}
 
+@media (max-width: 500px) {
+#div-master{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+.ficha{
+    height: 15vmax;
+    margin: 10px;
+}
+.nome-perfil{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    
+}
+.imagem-perfil-class{
+    width: 9vmax;
+    height: 9vmax;
+     grid-column-start: 1;
+     grid-row-start: 1;
+    }
+.flex-status{
+    align-items: center;
+    margin-top: 2vh;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+.abaixo-nome{
+    font-size: 1.2vmax;
+}
 }
