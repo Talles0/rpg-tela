@@ -22,11 +22,13 @@ main{
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
     column-gap: 1%;
 
-    justify-items: center;
+    row-gap: 2vh;
+ 
 }
 
 .ficha{
@@ -34,8 +36,15 @@ main{
 
     background-color: rgb(47, 18, 134);
 
-    width: 40vmax;
-    height: 70%;
+    width: 80vw;
+    max-width: 60vmax;
+    height: 20vmax;
+
+    margin: 10px;
+
+    max-width: 615px;
+    max-height: 388px;
+
     border-radius: 5px;
 
     display: grid;
@@ -48,8 +57,6 @@ main{
 }
 .ficha:hover{
     margin-left: -15px;
-    width: 95%;
-    height: 75%;
 
     border-radius: 5px;
 
@@ -57,26 +64,29 @@ main{
 }
 .fundo-thareon{
     background-image: url('https://i.postimg.cc/nr5p0ZX0/FUNDO-RPG1.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: round;
 }
 .fundo-kaerzhul{
     background-image: url('https://i.postimg.cc/59k4x5sL/FUNDO-RPG2.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: round;
 }
 .fundo-na{
-    background-image: linear-gradient(to right, rgb(255, 228, 132), rgb(151, 151, 247));
-}      
+    background-image: url('https://i.postimg.cc/T3QPCKnL/FUNDO-RPG3-1.png');
+    background-size: contain;
+    background-repeat: round;
+}
+ 
 .imagem-perfil-class{
-    width: 12vw;
-    height: 12vw;
-
+    width: 9vmax;
+    height: 9vmax;
+     
     justify-self: center;
     border-radius: 360px;
 
     grid-column-start: 1;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-row-end: 3;
 
     box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.7);
@@ -84,7 +94,8 @@ main{
 .nome-perfil{
     align-self: center;
     grid-column-start: 2;
-    grid-row-start: 1;
+    grid-row-start: 2;
+
     font-family: 'Jersey 10';
     font-size: 3vmax;
     
@@ -93,10 +104,13 @@ main{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: flex-start;
+    align-items: center;
 
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-row-start: 2;
+
+     
+    margin-top: 2vh;
 }
 .div-hp{
     grid-column-start: 2;
@@ -145,10 +159,11 @@ main{
 
 }
 .abaixo-nome{
+    margin-top: 2px;
     grid-column-start: 2;
     grid-row-start: 2;
     font-family: 'Jersey 10';
-    font-size: 1.5vmax;
+    font-size: 1.2vmax;
     height: fit-content;
 }
 .texto-recolhivel{
@@ -171,7 +186,7 @@ summary{
   list-style-type: none;
 } 
 summary:hover{
-  list-style-type: '▶';
+  list-style-type: '➤';
 }
 .sumario{
     font-size: 1.5vmax;
@@ -191,37 +206,4 @@ summary:hover{
     color: #fff;
     background-color: #3d0000;
     border: none;
-}
-
-@media (max-width: 500px) {
-#div-master{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-}
-.ficha{
-    height: 15vmax;
-    margin: 10px;
-}
-.nome-perfil{
-    grid-column-start: 2;
-    grid-row-start: 2;
-    
-}
-.imagem-perfil-class{
-    width: 9vmax;
-    height: 9vmax;
-     grid-column-start: 1;
-     grid-row-start: 1;
-    }
-.flex-status{
-    align-items: center;
-    margin-top: 2vh;
-    grid-column-start: 1;
-    grid-row-start: 2;
-}
-.abaixo-nome{
-    font-size: 1.2vmax;
-}
 }
