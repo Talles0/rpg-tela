@@ -2,13 +2,13 @@ var ahp1, ahp2, ahp3
 var thp1, thp2, thp3
 
 
-        ahp1 = "17";
-        ahp2 = "17";
-        ahp3 = "16";
+        ahp1 = "30";
+        ahp2 = "40";
+        ahp3 = "25";
 
-        thp1 = "17";
-        thp2 = "17";
-        thp3 = "16";
+        thp1 = "30";
+        thp2 = "40";
+        thp3 = "25";
 
         life1 = ahp1 + "/" + thp1;
         life2 = ahp2 + "/" + thp2;
@@ -16,7 +16,7 @@ var thp1, thp2, thp3
 
 var asn, tsn, sanidadefull
         
-        asn = 7;
+        asn = 10;
         tsn = 10;
         sanidadefull = asn + "/" + tsn;
 
