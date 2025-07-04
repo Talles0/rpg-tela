@@ -29,11 +29,24 @@
     justify-content: center;
 }
 #caixa-rolagem{
-     font-size: 100px;
+    font-size: 100px;
     padding: 0px 10px;
     border: solid;
     width: fit-content;
     justify-self: center;
+
+}
+.girar{
+    animation-duration: 0.5s;
+    animation-name: girar;
+}
+@keyframes girar {
+    from{
+        rotate: 0deg;
+    }
+   to{
+    rotate: 360deg;
+   }
 }
 #div-inputs{
     display: grid;
