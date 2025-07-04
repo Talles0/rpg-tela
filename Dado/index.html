@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolar Dados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+    <main>
+      <div id="master">
+        <div id="div-rolagem">
+            <div id="caixa-rolagem">
+            <span id="dado-rolado">...</span>
+            </div>
+            <div id="div-inputs">
+            <div class="input-rolagem" id="div-quantidade"><label>Quantidade: <input id="input-quantidade" type="number"></label></div>
+            <div class="input-rolagem" id="div-bonus">Bônus: <input id="input-bonus" type="number"></div>
+            </div>
+        </div>
+        <div id="div-dados">
+        <div class="dado" id="d4-div">
+            <span class="legenda">D4</span>
+            <button class="botao-giro" id="botao-d4" onclick="rolarD4()"></button>
+        </div>
+        <div class="dado" id="d6-div">
+            <span class="legenda">D6</span>
+            <button class="botao-giro" id="botao-d6" onclick="rolarD6()"></button>
+        </div>
+        <div class="dado" id="d8-div">
+            <span class="legenda">D8</span>
+            <button class="botao-giro" id="botao-d8" onclick="rolarD8()"></button>
+        </div>
+        <div class="dado" id="d10-div">
+            <span class="legenda">D10</span>
+            <button class="botao-giro" id="botao-d10" onclick="rolarD10()"></button>
+        </div>
+        <div class="dado" id="d12-div">
+            <span class="legenda">D12</span>
+            <button class="botao-giro" id="botao-d12" onclick="rolarD12()"></button>
+        </div>
+        <div class="dado" id="20-div">
+            <span class="legenda">D20</span>
+            <button class="botao-giro" id="botao-d20" onclick="rolarD20()"></button>
+        </div>
+        <div class="dado" id="d50-div">
+            <span class="legenda">D50</span>
+            <button class="botao-giro" id="botao-d50" onclick="rolarD50()"></button>
+        </div>
+        <div class="dado" id="d100-div">
+            <span class="legenda">D100</span>
+            <button class="botao-giro" id="botao-d100" onclick="rolarD100()"></button>
+        </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js">
+    </script>
+</body>
+</html>
